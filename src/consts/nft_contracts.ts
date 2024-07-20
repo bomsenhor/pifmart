@@ -50,8 +50,7 @@ export const NFT_CONTRACTS: NftContract[] = [
     title: "Pirate Apes",
     thumbnailUrl: "https://i.seadn.io/s/raw/files/84a605dbb2e3c70a55852c6fd3e79b31.gif",
     type: "ERC721",
-  }
-  /** 
+  },
   {
     address: "0x6b2ef4b0dda234bb0a73b12c69558e578c747e35",
     chain: ethereum,
@@ -79,5 +78,4 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "machu-picchu-by-jaybomsenhor",
   },
-  **/
 ];
