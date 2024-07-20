@@ -1,5 +1,5 @@
 import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy } from "./chains";
+import { ethereum, polygon, base } from "./chains";
 
 export type NftContract = {
   address: string;
@@ -20,56 +20,64 @@ export type NftContract = {
  */
 export const NFT_CONTRACTS: NftContract[] = [
   {
-    address: "0x6b869a0cF84147f05a447636c42b8E53De65714E",
-    chain: avalancheFuji,
-    title: "Steakhouse: Liberatorz",
+    address: "0x557500c767785ce9d28c620de01740825f965fdb",
+    chain: polygon,
+    title: "Pink Eye the Clown",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeigonh3hde5suwcb3qvkh6ljtvxv7ubfmcqbwfvi3ihoi3igd27jwe/SteakhouseLogo.svg",
+      "https://i.seadn.io/s/raw/files/8e8618388848b95241184d1344704f13.gif",
     type: "ERC721",
   },
   {
-    address: "0xC5A2c72c581eA4A17e17bEeF38a9597132830401",
-    chain: avalancheFuji,
-    title: "Ugly Waifu",
+    address: "0x1024ce6b79f266ba10a20ddb87793af2c2b196d7",
+    chain: polygon,
+    title: "Ten Little Duper Frogs",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidaadqapi7twzd7pjp24tu4ngsr3teubrhop7hg3jk3oj6lqysfgm/OS-LOGO.png",
-    slug: "ugly-waifu",
+      "https://i.seadn.io/s/raw/files/1bc62b50ee2401aee284643c4e4c1350.gif",
     type: "ERC721",
   },
 
   {
-    address: "0x0896Db00D8987Fba2152aa7c14c4255eBC7354cE",
-    chain: avalancheFuji,
-    title: "Unnamed Collection",
-    description: "",
+    address: "0x7991b42B4130978e865A61557e47F38a705bA1e4",
+    chain: polygon,
+    title: "Dreamlike Visions",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/Qmct2vS78Uwug3zVtqQognskPPRmd4wRQiaDAQWt1kRJws/0.png",
-    slug: "unnamed-collection",
+      "https://i.seadn.io/s/raw/files/0a65e98c70fe1b306d45ce59e4832ca0.jpg",
     type: "ERC721",
   },
   {
-    address: "0x0ACaCa3d3F64bb6e6D3564BBc891c58Bd4A4c83c",
-    chain: avalancheFuji,
-    title: "GoroBot",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeiay3ffxy3os56bvnu5cmq7gids4v6n4hf5nvvcb3gy2dzavi3ltnu/profile.jpg",
-    slug: "gorobot",
+    address:  "0x3B9edBC42bA4ACEDb4f2Aa290aEFBb40cd10fCAc",
+    chain: ethereum,
+    title: "Pirate Apes",
+    thumbnailUrl: "https://i.seadn.io/s/raw/files/84a605dbb2e3c70a55852c6fd3e79b31.gif",
     type: "ERC721",
-  },
+  }
+  /** 
   {
-    address: "0x4b6CDEFF5885A57678261bb95250aC43aD490752",
-    chain: polygonAmoy,
-    title: "Mata NFT",
+    address: "0x6b2ef4b0dda234bb0a73b12c69558e578c747e35",
+    chain: ethereum,
+    title: "Wandering through the Mind Realm in AI",
     thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeidec7x6bptqmrxgptaedd7wfwxbsccqfogzwfsd4a7duxn4sdmnxy/0.png",
-    type: "ERC721",
-  },
-  {
-    address: "0xd5e815241882676F772A624E3892b27Ff3a449c4",
-    chain: avalancheFuji,
-    title: "Cats (ERC1155)",
-    thumbnailUrl:
-      "https://258c828e8cc853bf5e0efd001055fb39.ipfscdn.io/ipfs/bafybeif2nz6wbwuryijk2c4ayypocibexdeirlvmciqjyvlzz46mzoirtm/0.png",
+      "https://i.seadn.io/s/raw/files/b1f889f929f2ae024490fb2910b0ab1b.jpg",
     type: "ERC1155",
+    slug: "wandering-through-the-mind-realm-in-ai",
   },
+  {
+    address: "0x2e5B1560e5ba01bF098ACaA82a89Fe34EA709CE5",
+    chain: ethereum,
+    title: "Little man! x Rorschach's",
+    thumbnailUrl:
+      "https://i.seadn.io/gcs/files/c035f5a23ceb6d6f331ce0a0e6b9cb51.jpg",
+    type: "ERC721",
+    slug: "little-man-x-rorschach-s",
+  },
+  {
+    address: "0x0734Fa12e5d8d793B54FbCA48173934DF5de76FB",
+    chain: ethereum,
+    title: "Machu Picchu by JayBomSenhor",
+    thumbnailUrl:
+      "https://i.seadn.io/gcs/files/36c3ed6549a25e4f1d2a281a55ab009c.png",
+    type: "ERC721",
+    slug: "machu-picchu-by-jaybomsenhor",
+  },
+  **/
 ];

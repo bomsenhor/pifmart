@@ -23,7 +23,7 @@ export default function Home() {
           {/* Delete this <Card /> in your own app */}
           <Card border="1px" maxW="90vw" mx="auto">
             <CardHeader>
-              <Heading size="md">Marketplace Template v2</Heading>
+              <Heading size="md">PiF Marketplace</Heading>
             </CardHeader>
 
             <CardBody>
@@ -44,7 +44,7 @@ export default function Home() {
             </CardBody>
           </Card>
           <Heading ml="20px" mt="40px">
-            Trending collections
+            PiF Collections
           </Heading>
           <Flex
             direction="row"
@@ -77,37 +77,24 @@ export default function Home() {
 // Delete this in your own app
 const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
   {
-    title: "Latest software",
+    title: "Pay it Forwawrd",
     bullet_points: [
-      "Shipped with the latest thirdweb SDK (v5) and Next.js 14 (App router)",
+      "PiFMART is an initiative to engage different NFT communities to collaborate and foster diversity and inclusion. Just as PiF AI seeks to encourage community members, new upcoming artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
+      "PiFMART is the place where artists can show case their work, buy or sell using different tokens from partner communities."
     ],
   },
   {
     title: "Multi-chain",
     bullet_points: [
-      "Seamlessly trade and browse items on multiple chains",
-      "You'd have to deploy a thirdweb Marketplace V3 contract on each of the chains you want to support",
-    ],
-  },
-  {
-    title: "Multiple collections supported",
-    bullet_points: [
-      "The new template now supports multiple collections, you can view your owned NFTs and your listings",
+      "With PiFMART, you can seamlessly trade and browse items on multiple supported chains",
     ],
   },
   {
     title: "Upcoming features",
     bullet_points: [
-      "Select different currencies (ERC20) when creating listings",
+      "Select different (ERC20) currencies when creating listings",
       "UI for English Auctions",
-    ],
-  },
-  {
-    title: "Contribute",
-    bullet_points: [
-      "We welcome all contributions from the community.",
-      "Found a bug or have some suggestions? Create a GitHub issue!",
-      "Repo: https://github.com/thirdweb-example/marketplace-template",
+      "Omni-chain comming soon!"
     ],
   },
 ];

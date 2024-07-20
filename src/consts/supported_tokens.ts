@@ -1,5 +1,5 @@
 import type { Chain } from "thirdweb";
-import { avalancheFuji, polygonAmoy, sepolia } from "./chains";
+import { ethereum, polygon, base } from "./chains";
 
 export type Token = {
   tokenAddress: string;
@@ -22,58 +22,45 @@ export type SupportedTokens = {
  */
 export const SUPPORTED_TOKENS: SupportedTokens[] = [
   {
-    chain: avalancheFuji,
+    chain: ethereum,
     tokens: [
       {
-        tokenAddress: "0x5425890298aed601595a70ab815c96711a31bc65",
+        tokenAddress: "0x726516B20c4692a6beA3900971a37e0cCf7A6BFf",
+        symbol: "FRG",
+        icon: "/erc20-icons/usdc.png",
+      },
+      {
+        tokenAddress: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
         symbol: "USDC",
         icon: "/erc20-icons/usdc.png",
       },
       {
-        tokenAddress: "0x82dcec6aa3c8bfe2c96d40d8805ee0da15708643",
-        symbol: "USDT",
-        icon: "/erc20-icons/usdt.png",
-      },
-      // Add more ERC20 here...
-    ],
-  },
-
-  {
-    chain: polygonAmoy,
-    tokens: [
-      {
-        tokenAddress: "0x41e94eb019c0762f9bfcf9fb1e58725bfb0e7582",
-        symbol: "USDC",
-        icon: "/erc20-icons/usdc.png",
-      },
-      {
-        tokenAddress: "0xbcf39d8616d15fd146dd5db4a86b4f244a9bc772",
+        tokenAddress: "0xdac17f958d2ee523a2206206994597c13d831ec7",
         symbol: "USDT",
         icon: "/erc20-icons/usdt.png",
       },
     ],
   },
-
   {
-    chain: sepolia,
+    chain: polygon,
     tokens: [
       {
-        tokenAddress: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238",
-        symbol: "USDC",
-        icon: "/erc20-icons/usdc.png",
+        tokenAddress: "0x410fa99e86bf52c27343B9A8389C59FEf2930ee1",
+        symbol: "0xPiF",
+        icon: "/native-token-icons/matic.png",
       },
       {
-        tokenAddress: "0x36160274b0ed3673e67f2ca5923560a7a0c523aa",
-        symbol: "USDT",
-        icon: "/erc20-icons/usdt.png",
-      },
+        tokenAddress: "0xf390A82F731706cf3739c3543569Faf021733820",
+        symbol: "DBL",
+        icon: "/native-token-icons/matic.png",
+      }
     ],
   },
 ];
 
 export const NATIVE_TOKEN_ICON_MAP: { [key in Chain["id"]]: string } = {
   1: "/native-token-icons/eth.png",
-  [sepolia.id]: "/native-token-icons/eth.png",
-  [avalancheFuji.id]: "/native-token-icons/avax.png",
-  [polygonAmoy.id]: "/native-token-icons/matic.png",
+  [ethereum.id]: "/native-token-icons/eth.png",
+  [polygon.id]: "/native-token-icons/avax.png",
+  [base.id]: "/native-token-icons/matic.png",
 };
