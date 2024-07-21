@@ -53,7 +53,12 @@ export const SUPPORTED_TOKENS: SupportedTokens[] = [
         tokenAddress: "0xf390A82F731706cf3739c3543569Faf021733820",
         symbol: "DBL",
         icon: "/native-token-icons/matic.png",
-      }
+      },
+      {
+        tokenAddress: "0x94d840c841fF96Eb842012c161D96B7715C92622",
+        symbol: "APP",
+        icon: "/native-token-icons/matic.png",
+      },
     ],
   },
 ];

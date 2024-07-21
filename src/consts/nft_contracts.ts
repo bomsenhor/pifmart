@@ -67,7 +67,23 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "theappreciators-nft"
   },
-/**
+  {
+    address:  "0x50C6d9A1149000BA9F371294f5F4C1a7C0C02943",
+    chain: ethereum,
+    title: "A Portrait of My Mother",
+    thumbnailUrl: "https://i.seadn.io/gcs/files/47da0e418443300c68a9c9b9c9e787f9.jpg",
+    type: "ERC721",
+    slug: "a-portrait-of-my-mother"
+  },
+  /** 
+  {
+    address:  "0x6f6362b606EDB8f16D6F1eE7b9FE6569ED4B4778",
+    chain: ethereum,
+    title: "Adventure Time with Pons & Little man!",
+    thumbnailUrl: "https://i.seadn.io/gcs/files/fdd2f1bc6a5d2e0908f9e7e816368bd6.gif",
+    type: "ERC1155",
+    slug: "pons-x-little-man-1"
+  },
   {
     address:  "0xe34b204B32ef3DF0818Fa0e4d3bf076Ca5f3C181",
     chain: ethereum,
@@ -75,8 +91,7 @@ export const NFT_CONTRACTS: NftContract[] = [
     thumbnailUrl: "https://i.seadn.io/gcs/files/7e5ed1c112650708022be08466848500.jpg",
     type: "ERC721",
     slug: "appreciators-companions"
-  },
-/** 
+  }, 
   {
     address: "0x6b2ef4b0dda234bb0a73b12c69558e578c747e35",
     chain: ethereum,
