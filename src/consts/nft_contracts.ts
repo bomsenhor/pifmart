@@ -35,7 +35,6 @@ export const NFT_CONTRACTS: NftContract[] = [
       "https://i.seadn.io/s/raw/files/1bc62b50ee2401aee284643c4e4c1350.gif",
     type: "ERC721",
   },
-
   {
     address: "0x7991b42B4130978e865A61557e47F38a705bA1e4",
     chain: polygon,
@@ -45,13 +44,39 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
   },
   {
+    address: "0xCa72fe5242f4043892fd695C7CE228a648271C67",
+    chain: polygon,
+    title: "Crypt Social Club",
+    thumbnailUrl:
+      "https://i.seadn.io/s/raw/files/8f34ed881789e93d2718fdd1feb55865.webp",
+    type: "ERC721",
+    slug: "crypt-social-club-project",
+  },
+  {
     address:  "0x3B9edBC42bA4ACEDb4f2Aa290aEFBb40cd10fCAc",
     chain: ethereum,
     title: "Pirate Apes",
     thumbnailUrl: "https://i.seadn.io/s/raw/files/84a605dbb2e3c70a55852c6fd3e79b31.gif",
     type: "ERC721",
   },
-  /** 
+  {
+    address:  "0x71772bEFF1FB348Eb7d5f9F1E0b5f11Bc49aB5e4",
+    chain: ethereum,
+    title: "The Appreciators NFT",
+    thumbnailUrl: "https://i.seadn.io/gcs/files/a0f4e3e1b928fa3eecafccadb16aaece.jpg",
+    type: "ERC721",
+    slug: "theappreciators-nft"
+  },
+/**
+  {
+    address:  "0xe34b204B32ef3DF0818Fa0e4d3bf076Ca5f3C181",
+    chain: ethereum,
+    title: "Appreciators Companions",
+    thumbnailUrl: "https://i.seadn.io/gcs/files/7e5ed1c112650708022be08466848500.jpg",
+    type: "ERC721",
+    slug: "appreciators-companions"
+  },
+/** 
   {
     address: "0x6b2ef4b0dda234bb0a73b12c69558e578c747e35",
     chain: ethereum,
@@ -79,5 +104,12 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "machu-picchu-by-jaybomsenhor",
   },
-  **/
+  {
+    address:  "0xC379e535CaFf250a01CAa6C3724Ed1359Fe5c29B",
+    chain: ethereum,
+    title: "The Plague",
+    type: "ERC721",
+    slug: "the-plague"
+  },
+**/
 ];

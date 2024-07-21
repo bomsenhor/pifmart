@@ -44,7 +44,7 @@ export default function Home() {
             </CardBody>
           </Card>
           <Heading ml="20px" mt="40px">
-            PiF Collections
+            NFT Collections
           </Heading>
           <Flex
             direction="row"
@@ -79,7 +79,7 @@ const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
   {
     title: "Pay it Forwawrd",
     bullet_points: [
-      "PiFMART is an initiative to engage different NFT communities to collaborate and foster diversity and inclusion. Just as PiF AI seeks to encourage community members, new upcoming artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
+      "PiFMART is an initiative to engage different NFT communities to collaborate and foster diversity and inclusion. Just as PiF AI seeks to encourage community members, new artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
       "PiFMART is the place where artists can show case their work, buy or sell using different tokens from partner communities."
     ],
   },
@@ -93,7 +93,6 @@ const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
     title: "Upcoming features",
     bullet_points: [
       "Select different (ERC20) currencies when creating listings",
-      "UI for English Auctions",
       "Omni-chain comming soon!"
     ],
   },

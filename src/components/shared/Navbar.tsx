@@ -41,7 +41,7 @@ export function Navbar() {
             as={Link}
             href="/"
             _hover={{ textDecoration: "none" }}
-            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgGradient="linear(to-l, #36669C, #0355A7)"
             bgClip="text"
             fontWeight="extrabold"
           >
