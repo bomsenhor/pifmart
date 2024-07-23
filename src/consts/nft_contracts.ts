@@ -60,6 +60,7 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "theappreciators-nft"
   },
+/**
   {
     address:  "0xe34b204B32ef3DF0818Fa0e4d3bf076Ca5f3C181",
     chain: ethereum,
@@ -68,7 +69,6 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "appreciators-companions"
   }, 
-/**
   {
     address:  "0x3B9edBC42bA4ACEDb4f2Aa290aEFBb40cd10fCAc",
     chain: ethereum,
