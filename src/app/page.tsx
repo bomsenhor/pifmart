@@ -77,7 +77,7 @@ export default function Home() {
 // Delete this in your own app
 const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
   {
-    title: "Pay it Forwawrd",
+    title: "Pay it Forward",
     bullet_points: [
       "PiFMART is an initiative to engage different NFT communities to collaborate and foster diversity and inclusion. Just as PiF AI seeks to encourage community members, new artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
       "PiFMART is the place where artists can show case their work, buy or sell using different tokens from partner communities."
