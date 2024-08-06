@@ -60,7 +60,7 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
     slug: "theappreciators-nft"
   },
-/**
+
   {
     address:  "0xe34b204B32ef3DF0818Fa0e4d3bf076Ca5f3C181",
     chain: ethereum,
@@ -70,12 +70,14 @@ export const NFT_CONTRACTS: NftContract[] = [
     slug: "appreciators-companions"
   }, 
   {
-    address:  "0x3B9edBC42bA4ACEDb4f2Aa290aEFBb40cd10fCAc",
+    address:  "0x3b9edbc42ba4acedb4f2aa290aefbb40cd10fcac",
     chain: ethereum,
     title: "Pirate Apes",
     thumbnailUrl: "https://i.seadn.io/s/raw/files/84a605dbb2e3c70a55852c6fd3e79b31.gif",
     type: "ERC721",
+    slug: "pirate-apes",
   },
+/**
   {
     address:  "0x50C6d9A1149000BA9F371294f5F4C1a7C0C02943",
     chain: ethereum,

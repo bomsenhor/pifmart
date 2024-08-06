@@ -63,7 +63,7 @@ export default function RelatedListings({
                 <Text>{item.asset.metadata?.name ?? "Unknown item"}</Text>
                 <Text>Price</Text>
                 <Text>
-                  {toEther(item.pricePerToken)}{" "}
+                  {item.currencyValuePerToken.displayValue}{" "}
                   {item.currencyValuePerToken.symbol}
                 </Text>
               </Flex>
