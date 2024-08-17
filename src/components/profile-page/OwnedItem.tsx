@@ -1,29 +1,55 @@
 import { client } from "@/consts/client";
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
-import type { NFT, ThirdwebContract } from "thirdweb";
-import { MediaRenderer } from "thirdweb/react";
+import type { NFT } from "thirdweb";
+import { useState, useEffect } from "react";
 
-export function OwnedItem(props: {
+import { MediaRenderer } from "thirdweb/react";
+import { Link } from "@chakra-ui/next-js";
+import { Box, Flex, Text } from "@chakra-ui/react";
+
+interface OwnedItemProps {
   nft: NFT;
-  nftCollection: ThirdwebContract;
-}) {
-  const { nft, nftCollection } = props;
+  chainId: number;
+  nftCollection: string;
+}
+export function OwnedItem({ nft, chainId, nftCollection }: OwnedItemProps) {
+  const [image, setImage] = useState("");
+  const [name, setName] = useState("Unknown item");
+  useEffect(() => {
+    const thirdwebImg = nft.metadata.image;
+    const thirdwebName = nft.metadata.name;
+    if (!thirdwebImg || !thirdwebName) {
+      fetch("/api/nft/metadata", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ uri: nft.metadata.uri }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setImage(data?.image ?? image);
+          setName(data?.name ?? name);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    } else {
+      setImage(thirdwebImg);
+      setName(thirdwebName);
+    }
+  });
   return (
-    <>
-      <Box
-        rounded="12px"
-        as={Link}
-        href={`/collection/${nftCollection.chain.id}/${
-          nftCollection.address
-        }/token/${nft.id.toString()}`}
-        _hover={{ textDecoration: "none" }}
-        w={250}
-      >
-        <Flex direction="column">
-          <MediaRenderer client={client} src={nft.metadata.image} />
-          <Text>{nft.metadata?.name ?? "Unknown item"}</Text>
-        </Flex>
-      </Box>
-    </>
+    <Box
+      key={nft.id}
+      rounded="12px"
+      as={Link}
+      href={`/collection/${chainId}/${nftCollection}/token/${nft.id.toString()}`}
+      _hover={{ textDecoration: "none" }}
+    >
+      <Flex direction="column">
+        <MediaRenderer client={client} src={image} />
+        <Text>{name}</Text>
+      </Flex>
+    </Box>
   );
 }

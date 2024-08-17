@@ -17,7 +17,7 @@ import { ProfileMenu } from "./Menu";
 import { useState } from "react";
 import { NFT_CONTRACTS, type NftContract } from "@/consts/nft_contracts";
 import {
-  MediaRenderer,
+//  MediaRenderer,
   useActiveAccount,
   useReadContract,
 } from "thirdweb/react";
@@ -146,8 +146,8 @@ export function ProfileSection(props: Props) {
                       <>
                         {data?.map((item) => (
                           <OwnedItem
-                            key={item.id.toString()}
-                            nftCollection={contract}
+                            chainId={chain.id}
+                            nftCollection={address}
                             nft={item}
                           />
                         ))}
@@ -171,21 +171,13 @@ export function ProfileSection(props: Props) {
                     {listings && listings.length > 0 ? (
                       <>
                         {listings?.map((item) => (
-                          <Box
-                            key={item.id}
-                            rounded="12px"
-                            as={Link}
-                            href={`/collection/${contract.chain.id}/${
-                              contract.address
-                            }/token/${item.asset.id.toString()}`}
-                            _hover={{ textDecoration: "none" }}
-                            w={250}
-                          >
+                          <Box>
                             <Flex direction="column">
-                              <MediaRenderer
-                                client={client}
-                                src={item.asset.metadata.image}
-                              />
+                               <OwnedItem
+                                  chainId={chain.id}
+                                  nftCollection={address}
+                                  nft={item}
+                                />
                               <Text mt="12px">
                                 {item.asset?.metadata?.name ?? "Unknown item"}
                               </Text>
