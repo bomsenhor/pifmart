@@ -20,7 +20,8 @@ import {
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import { getNFTs as getNFTs1155 } from "thirdweb/extensions/erc1155";
 import { getNFTs as getNFTs721 } from "thirdweb/extensions/erc721";
-import { MediaRenderer, useReadContract } from "thirdweb/react";
+import { useReadContract } from "thirdweb/react";
+import { NFTCard } from "./NFTCard";
 
 export function AllNftsGrid() {
   const [itemsPerPage, setItemsPerPage] = useState<number>(20);
@@ -31,7 +32,7 @@ export function AllNftsGrid() {
     ? supplyInfo.endTokenId - supplyInfo.startTokenId + 1n
     : 0n;
   const numberOfPages: number = Number(
-    (totalItems + BigInt(itemsPerPage) - 1n) / BigInt(itemsPerPage)
+    (totalItems + BigInt(itemsPerPage) - 1n) / BigInt(itemsPerPage),
   );
   const pages: { start: number; count: number }[] = [];
 
@@ -50,7 +51,7 @@ export function AllNftsGrid() {
       contract: nftContract,
       start: pages[currentPageIndex].start,
       count: pages[currentPageIndex].count,
-    }
+    },
   );
   const len = allNFTs?.length ?? 0;
   const columns = useBreakpointValue({
@@ -67,20 +68,11 @@ export function AllNftsGrid() {
       <SimpleGrid columns={columns} spacing={4} p={4} mx="auto" mt="20px">
         {allNFTs && allNFTs.length > 0 ? (
           allNFTs.map((item) => (
-            <Box
-              key={item.id}
-              rounded="12px"
-              as={Link}
-              href={`/collection/${nftContract.chain.id}/${
-                nftContract.address
-              }/token/${item.id.toString()}`}
-              _hover={{ textDecoration: "none" }}
-            >
-              <Flex direction="column">
-                <MediaRenderer client={client} src={item.metadata.image} />
-                <Text>{item.metadata?.name ?? "Unknown item"}</Text>
-              </Flex>
-            </Box>
+            <NFTCard
+              nft={item}
+              chainId={nftContract.chain.id}
+              contractAddress={nftContract.address}
+            />
           ))
         ) : (
           <Box mx="auto">Loading...</Box>
