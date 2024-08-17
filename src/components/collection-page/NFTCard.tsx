@@ -28,6 +28,7 @@ export function NFTCard({ nft, chainId, contractAddress }: NFTCardProps) {
         .then((res) => res.json())
         .then((data) => {
           setImage(data?.image ?? image);
+          setName(data?.name ?? name);
         })
         .catch((err) => {
           console.error(err);
