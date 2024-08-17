@@ -173,11 +173,6 @@ export function ProfileSection(props: Props) {
                         {listings?.map((item) => (
                           <Box>
                             <Flex direction="column">
-                               <OwnedItem
-                                  chainId={chain.id}
-                                  nftCollection={address}
-                                  nft={item}
-                                />
                               <Text mt="12px">
                                 {item.asset?.metadata?.name ?? "Unknown item"}
                               </Text>
