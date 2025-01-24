@@ -77,16 +77,16 @@ export default function Home() {
 // Delete this in your own app
 const _latestUpdates: Array<{ title: string; bullet_points: string[] }> = [
   {
-    title: "Made by 0xPiF",
+    title: "Made by NICHe",
     bullet_points: [
-      "PiFMART is an initiative to engage different NFT communities to collaborate and foster diversity and inclusion. Just as PiF AI seeks to encourage community members, new artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
+      "PiFMART is an initiative to engage different NFT communities to collaborate and foster inclusion. Just as PiF AI seeks to encourage community members, new artists and creators to innovate, PiFMART provides the flexibility to use and trade different utility tokens, allowing communities to diversify and cross-polinate.",
       "PiFMART is the place where artists can show case their work, buy or sell using different tokens from partner communities."
     ],
   },
   {
     title: "Multi-chain",
     bullet_points: [
-      "With PiFMART, you can seamlessly trade and browse items on multiple supported chains",
+      "With PiFMART, you can seamlessly trade and browse items on multiple supported chains.",
     ],
   },
   {
