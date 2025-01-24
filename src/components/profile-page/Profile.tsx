@@ -147,7 +147,7 @@ export function ProfileSection(props: Props) {
                         {data?.map((item) => (
                           <OwnedItem
                             chainId={chain.id}
-                            nftCollection={address}
+                            nftCollection={contract.address}
                             nft={item}
                           />
                         ))}
@@ -159,7 +159,7 @@ export function ProfileSection(props: Props) {
                             ? "You"
                             : ensName
                             ? ensName
-                            : shortenAddress(address)}{" "}
+                            : shortenAddress(contract.address)}{" "}
                           {isYou ? "do" : "does"} not own any NFT in this
                           collection
                         </Text>
