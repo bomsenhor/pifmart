@@ -20,6 +20,14 @@ export type NftContract = {
  */
 export const NFT_CONTRACTS: NftContract[] = [
   {
+    address: "0xD7c1961c60a84BD4dA138D6F93737AFF14E76D7b",
+    chain: base,
+    title: "The Grotesque Carnival",
+    thumbnailUrl:
+      "https://i.seadn.io/s/raw/files/ad489d7f539412f0c9b561dbcc42294b.png",
+    type: "ERC721",
+  },
+  {
     address: "0x557500c767785ce9d28c620de01740825f965fdb",
     chain: polygon,
     title: "Pink Eye the Clown",
