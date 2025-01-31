@@ -61,6 +61,21 @@ export const SUPPORTED_TOKENS: SupportedTokens[] = [
       },
     ],
   },
+  {
+    chain: base,
+    tokens: [
+      {
+        tokenAddress: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        symbol: "USDC",
+        icon: "/erc20-icons/usdc.png",
+      },
+      {
+        tokenAddress: "0x3C5D7fB67B2fFfF7953D9F5D6a578eA97A679E9B",
+        symbol: "USDT",
+        icon: "/erc20-icons/usdt.png",
+      },
+    ],
+  },
 ];
 
 export const NATIVE_TOKEN_ICON_MAP: { [key in Chain["id"]]: string } = {
