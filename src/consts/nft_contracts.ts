@@ -20,6 +20,14 @@ export type NftContract = {
  */
 export const NFT_CONTRACTS: NftContract[] = [
   {
+    address: "0x0Ccf24206c126f2a028CF12e043476C5e73FDA3e",
+    chain: base,
+    title: "NICHe 2025",
+    thumbnailUrl:
+      "https://no-idea.art/wp-content/uploads/2025/02/image-50-2.png",
+    type: "ERC721",
+  },
+  {
     address: "0xD7c1961c60a84BD4dA138D6F93737AFF14E76D7b",
     chain: base,
     title: "The Grotesque Carnival",

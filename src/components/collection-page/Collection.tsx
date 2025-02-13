@@ -25,7 +25,7 @@ export function Collection() {
     type === "ERC1155" ? getNFT1155 : getNFT721,
     {
       contract: nftContract,
-      tokenId: 1n,
+      tokenId: 0n,
       queryOptions: {
         enabled: isLoading || !!contractMetadata?.image,
       },
@@ -77,7 +77,7 @@ export function Collection() {
                   ? `(${(
                       supplyInfo.endTokenId -
                       supplyInfo.startTokenId +
-                      1n
+                      0n
                     ).toString()})`
                   : ""}
               </Tab>
