@@ -28,6 +28,14 @@ export const NFT_CONTRACTS: NftContract[] = [
     type: "ERC721",
   },
   {
+    address: "0xC21348054F7bd8583B951cf199e7763eC61A81ff",
+    chain: base,
+    title: "Reflection of the Soul",
+    thumbnailUrl:
+      "https://i.seadn.io/s/raw/files/1a3d768226fd91c24d96d396ad60813a.jpg",
+    type: "ERC1155",
+  },
+  {
     address: "0xD7c1961c60a84BD4dA138D6F93737AFF14E76D7b",
     chain: base,
     title: "The Grotesque Carnival",
